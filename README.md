@@ -14,8 +14,6 @@ View [all components here](https://www.creative-tim.com/learning-lab/bootstrap/a
 During the development of this dashboard, we have used many existing resources from awesome developers. We want to thank them for providing their tools open source:
 - [Bootstrap 5](https://www.getbootstrap.com)- Open source front end framework
 - [Popper.js](https://popper.js.org/) - Kickass library used to manage poppers
-- [Perfect Scrollbar](https://github.com/utatti/perfect-scrollbar) - Minimalistic but perfect custom scrollbar plugin
-
 
 Let us know your thoughts below. And good luck with development!
 
