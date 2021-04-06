@@ -18,10 +18,8 @@
 
   .fixed-plugin {
     .fixed-plugin-button{
-      left: 0;
+      left: $fixed-plugin-right;
       right: auto;
-      border-top-right-radius: $border-radius;
-      border-bottom-right-radius: $border-radius;
     }
     .card{
       left: -$fixed-plugin-card-width !important;
@@ -76,6 +74,29 @@
   .dropdown{
     .dropdown-menu{
       left: 0;
+    }
+  }
+
+  .input-group{
+    .input-group-text{
+      border-left: 0;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      border-right: $input-border-width solid $input-border-color;
+    }
+    & > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback){
+      margin-right: -1px;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      border-top-left-radius: $input-border-radius;
+      border-bottom-left-radius: $input-border-radius;
+      border-right: 0;
+      border-left: $input-border-width solid $input-border-color;
+    }
+    &:not(.has-validation) > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu),
+    &:not(.has-validation) > .dropdown-toggle:nth-last-child(n + 3){
+      border-top-right-radius: $input-border-radius;
+      border-bottom-right-radius: $input-border-radius;
     }
   }
 }

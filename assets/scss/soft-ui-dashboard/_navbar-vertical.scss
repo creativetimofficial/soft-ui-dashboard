@@ -56,31 +56,6 @@
         white-space: nowrap;
     }
 
-    .navbar-nav .nav-link[data-bs-toggle="collapse"] {
-        &:after {
-            display: inline-block;
-            font-style: normal;
-            font-variant: normal;
-            text-rendering: auto;
-            -webkit-font-smoothing: antialiased;
-            font-family: 'Font Awesome 5 Free';
-            font-weight: 700;
-            content: "\f105";
-            margin-left: auto;
-            color: $gray-400;
-            @include transition($transition-base);
-        }
-
-        // Expanded
-        &[aria-expanded="true"] {
-            &:after {
-                color: theme-color("primary");
-                transform: rotate(90deg);
-            }
-        }
-    }
-
-
     // Navbar heading
     .navbar-heading {
         padding-top: $nav-link-padding-y;
@@ -89,6 +64,8 @@
         text-transform: uppercase;
         letter-spacing: .04em;
     }
+
+
 
 
     // Expanded navbar specific styles
@@ -207,11 +184,6 @@
                         margin-left: $navbar-icon-min-width - .15;
                       }
                     }
-
-                    // Third level
-                    .navbar-nav .nav .nav .nav-link .sidenav-normal {
-                      margin-left: $navbar-vertical-sidenav-normal-ml;
-                    }
                 }
             }
         }
@@ -285,6 +257,16 @@
     height: $sidenav-header-width;
 }
 
+.sidenav-footer{
+  .card{
+    &.card-background{
+      &:after{
+        opacity: $sidenav-card-opacity;
+      }
+    }
+  }
+}
+
 
 // Sidenav states
 
@@ -339,8 +321,13 @@
         box-shadow: $card-box-shadow;
 
         .navbar-nav{
-          .nav-link.active {
+          .nav-link{
+            &.active{
               box-shadow: none;
+            }
+            .icon{
+              @include gradient-directional(nth($light, 1) 0%, nth($light, -1) 100%, $deg: 310deg);
+            }
           }
         }
     }

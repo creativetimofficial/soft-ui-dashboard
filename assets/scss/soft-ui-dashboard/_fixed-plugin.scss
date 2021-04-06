@@ -1,12 +1,12 @@
 .fixed-plugin{
   .fixed-plugin-button{
-    background: rgba($gray-200, .9);
-    border-top-left-radius: $border-radius;
-    border-bottom-left-radius: $border-radius;
-    right: 0;
-    top: $fixed-plugin-top;
+    background: $white;
+    border-radius: $fixed-plugin-radius;
+    bottom: $fixed-plugin-bottom;
+    right: $fixed-plugin-right;
     font-size: $font-size-xl;
     z-index: $fixed-plugin-button-z-index;
+    box-shadow: $fixed-plugin-box-shadow;
     cursor: pointer;
     i{
       pointer-events: none;
