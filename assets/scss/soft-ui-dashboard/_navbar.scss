@@ -1,16 +1,18 @@
 @include media-breakpoint-down(md) {
-  .navbar-nav{
-    width: 100%;
+  .navbar-collapse{
     position: relative;
-    .nav-item{
-      &.dropdown{
-        position: static;
-        .dropdown-menu{
-          left: 0;
-          right: 0;
-          &.show{
-            &:before{
-              content: none;
+    .navbar-nav{
+      width: 100%;
+      .nav-item{
+        &.dropdown{
+          position: static;
+          .dropdown-menu{
+            left: 0;
+            right: 0;
+            &.show{
+              &:before{
+                content: none;
+              }
             }
           }
         }
