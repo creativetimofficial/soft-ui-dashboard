@@ -74,6 +74,14 @@
   .dropdown{
     .dropdown-menu{
       left: 0;
+      right: auto !important;  
+    }
+    .dropdown-menu-end {
+      &:before 
+      {
+        left: 28px !important;
+        right: auto !important;
+      }
     }
   }
 
