@@ -18,28 +18,35 @@
   <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
   <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
   <!-- CSS Files -->
-  <link id="pagestyle" href="../assets/css/soft-ui-dashboard.css?v=1.0.0" rel="stylesheet" />
+  <link id="pagestyle" href="../assets/css/soft-ui-dashboard.css?v=1.0.2" rel="stylesheet" />
 </head>
 
 <body class="offline-doc">
   <!-- Navbar -->
   <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl" id="navbarBlur" navbar-scroll="true">
-    <div class="container-fluid px-3">
+    <div class="container-fluid py-1 px-3">
       <nav aria-label="breadcrumb">
-        <ol class="breadcrumb bg-transparent mb-0 pb-1 px-0 me-sm-6 me-12">
-          <li class="breadcrumb-item"><a class="opacity-8 text-dark" href="javascript:;">Dashboard</a></li>
-          <li class="breadcrumb-item text-dark active" aria-current="page">Documentation</li>
+        <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
+          <li class="breadcrumb-item text-sm"><a class="opacity-5 text-dark" href="javascript:;">Pages</a></li>
+          <li class="breadcrumb-item text-sm text-dark active" aria-current="page">Documentation</li>
         </ol>
-        <h5 class="font-weight-normal">Documentation</h5>
+        <h6 class="font-weight-bolder mb-0">Documentation</h6>
       </nav>
-      <div class="collapse navbar-collapse me-md-0 me-4" id="navbar">
-        <ul class="navbar-nav mb-2 mb-sm-0 ms-sm-auto justify-content-sm-end">
+      <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
+        <div class="ms-md-auto pe-md-3 d-flex align-items-center">
+          <div class="input-group">
+            <span class="input-group-text text-body"><i class="fas fa-search" aria-hidden="true"></i></span>
+            <input type="text" class="form-control" placeholder="Type here...">
+          </div>
+        </div>
+        <ul class="navbar-nav  justify-content-end">
           <li class="nav-item d-flex align-items-center">
-            <a href="javascript:;" class="nav-link text-body text-uppercase font-weight-bold px-0">
-              Log in
+            <a href="javascript:;" class="nav-link text-body font-weight-bold px-0">
+              <i class="fa fa-user me-sm-1"></i>
+              <span class="d-sm-inline d-none">Sign In</span>
             </a>
           </li>
-          <li class="nav-item d-xl-none ps-4 d-flex align-items-center">
+          <li class="nav-item d-xl-none ps-3 d-flex align-items-center">
             <a href="javascript:;" class="nav-link text-body p-0" id="iconNavbarSidenav">
               <div class="sidenav-toggler-inner">
                 <i class="sidenav-toggler-line"></i>
@@ -48,7 +55,7 @@
               </div>
             </a>
           </li>
-          <li class="nav-item px-4 d-flex align-items-center">
+          <li class="nav-item px-3 d-flex align-items-center">
             <a href="javascript:;" class="nav-link text-body p-0">
               <i class="fa fa-cog fixed-plugin-button-nav cursor-pointer"></i>
             </a>
@@ -57,7 +64,7 @@
             <a href="javascript:;" class="nav-link text-body p-0" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
               <i class="fa fa-bell cursor-pointer"></i>
             </a>
-            <ul class="dropdown-menu px-2 py-3 ms-sm-n4" aria-labelledby="dropdownMenuButton">
+            <ul class="dropdown-menu  dropdown-menu-end  px-2 py-3 me-sm-n4" aria-labelledby="dropdownMenuButton">
               <li class="mb-2">
                 <a class="dropdown-item border-radius-md" href="javascript:;">
                   <div class="d-flex py-1">
@@ -128,12 +135,6 @@
           </li>
         </ul>
       </div>
-      <div class="ms-md-auto ps-md-3 d-flex align-items-center">
-        <div class="bg-white border-radius-lg d-flex">
-          <input type="text" class="form-control border-0 ps-3" placeholder="Type here...">
-          <button class="btn bg-gradient-primary my-1 me-1">Search</button>
-        </div>
-      </div>
     </div>
   </nav>
   <!-- End Navbar -->
@@ -145,7 +146,7 @@
           <h1 class="title">
             Soft UI Dashboard
           </h1>
-          <h3 class="description">Documentation v1.0.0</h3>
+          <h3 class="description">Documentation v1.0.2</h3>
           <br />
           <a href="https://www.creative-tim.com/learning-lab/bootstrap/license/soft-ui-dashboard" class="btn btn-primary btn-lg">View documentation</a>
         </div>
@@ -188,8 +189,6 @@
   <script src="../assets/js/core/popper.min.js"></script>
   <script src="../assets/js/core/bootstrap.min.js"></script>
   <script src="../assets/js/plugins/smooth-scrollbar.min.js"></script>
-  <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
-  <script src="../assets/js/soft-ui-dashboard.min.js?v=1.0.0"></script>
   <script>
     var win = navigator.platform.indexOf('Win') > -1;
     if (win && document.querySelector('#sidenav-scrollbar')) {
@@ -201,6 +200,8 @@
   </script>
   <!-- Github buttons -->
   <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
+  <script src="../assets/js/soft-ui-dashboard.min.js?v=1.0.2"></script>
 </body>
 
 </html>

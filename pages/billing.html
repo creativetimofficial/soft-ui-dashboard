@@ -1,6 +1,6 @@
 <!--
 =========================================================
-* Soft UI Dashboard - v1.0.1
+* Soft UI Dashboard - v1.0.2
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/soft-ui-dashboard
@@ -30,10 +30,6 @@
   <!--  Social tags      -->
   <meta name="keywords" content="creative tim, html dashboard, html css dashboard, web dashboard, bootstrap 5 dashboard, bootstrap 5, css3 dashboard, bootstrap 5 admin, Soft UI Dashboard bootstrap 5 dashboard, frontend, responsive bootstrap 5 dashboard, free dashboard, free admin dashboard, free bootstrap 5 admin dashboard">
   <meta name="description" content="Soft UI Dashboard is a beautiful Bootstrap 5 admin dashboard with a large number of components, designed to look beautiful and organized. If you are looking for a tool to manage and visualize data about your business, this dashboard is the thing for you.">
-  <!-- Schema.org markup for Google+ -->
-  <meta itemprop="name" content="Soft UI Dashboard by Creative Tim">
-  <meta itemprop="description" content="Soft UI Dashboard is a beautiful Bootstrap 5 admin dashboard with a large number of components, designed to look beautiful and organized. If you are looking for a tool to manage and visualize data about your business, this dashboard is the thing for you.">
-  <meta itemprop="image" content="https://s3.amazonaws.com/creativetim_bucket/products/450/original/opt_sd_free_thumbnail.png">
   <!-- Twitter Card data -->
   <meta name="twitter:card" content="product">
   <meta name="twitter:site" content="@creativetim">
@@ -49,7 +45,6 @@
   <meta property="og:image" content="https://s3.amazonaws.com/creativetim_bucket/products/450/original/opt_sd_free_thumbnail.png" />
   <meta property="og:description" content="Soft UI Dashboard is a beautiful Bootstrap 5 admin dashboard with a large number of components, designed to look beautiful and organized. If you are looking for a tool to manage and visualize data about your business, this dashboard is the thing for you." />
   <meta property="og:site_name" content="Creative Tim" />
-  <!--  -->
   <!--     Fonts and icons     -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
   <!-- Nucleo Icons -->
@@ -59,7 +54,7 @@
   <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
   <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
   <!-- CSS Files -->
-  <link id="pagestyle" href="../assets/css/soft-ui-dashboard.min.css?v=1.0.1" rel="stylesheet" />
+  <link id="pagestyle" href="../assets/css/soft-ui-dashboard.min.css?v=1.0.2" rel="stylesheet" />
   <!-- Anti-flicker snippet (recommended)  -->
   <style>
     .async-hide {
@@ -126,7 +121,7 @@
   <!-- End Google Tag Manager -->
 </head>
 
-<body class="g-sidenav-show  bg-gray-100">
+<body class="g-sidenav-show   bg-gray-100">
   <!-- Extra details for Live View on GitHub Pages -->
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NKDMSK6" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -135,7 +130,7 @@
     <div class="sidenav-header">
       <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute right-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
       <a class="navbar-brand m-0" href="../pages/dashboard.html">
-        <img src="../assets/img/logo-ct.png" class="navbar-brand-img h-100 w-15" alt="...">
+        <img src="../assets/img/logo-ct.png" class="navbar-brand-img h-100" alt="...">
         <span class="ms-1 font-weight-bold">Soft UI Dashboard</span>
       </a>
     </div>
@@ -298,9 +293,11 @@
           <div class="icon icon-shape icon-sm bg-white shadow text-center mb-3 d-flex align-items-center justify-content-center border-radius-md">
             <i class="ni ni-diamond text-dark text-gradient text-lg top-0" aria-hidden="true" id="sidenavCardIcon"></i>
           </div>
-          <h6 class="text-white up mb-0">Need help?</h6>
-          <p class="text-xs font-weight-bold">Please check our docs</p>
-          <a href="https://www.creative-tim.com/learning-lab/bootstrap/license/soft-ui-dashboard" target="_blank" class="btn btn-white btn-sm w-100 mb-0">Documentation</a>
+          <div class="docs-info">
+            <h6 class="text-white up mb-0">Need help?</h6>
+            <p class="text-xs font-weight-bold">Please check our docs</p>
+            <a href="https://www.creative-tim.com/learning-lab/bootstrap/license/soft-ui-dashboard" target="_blank" class="btn btn-white btn-sm w-100 mb-0">Documentation</a>
+          </div>
         </div>
       </div>
     </div>
@@ -348,7 +345,7 @@
               <a href="javascript:;" class="nav-link text-body p-0" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="fa fa-bell cursor-pointer"></i>
               </a>
-              <ul class="dropdown-menu dropdown-menu-end px-2 py-3 me-sm-n4" aria-labelledby="dropdownMenuButton">
+              <ul class="dropdown-menu  dropdown-menu-end  px-2 py-3 me-sm-n4" aria-labelledby="dropdownMenuButton">
                 <li class="mb-2">
                   <a class="dropdown-item border-radius-md" href="javascript:;">
                     <div class="d-flex py-1">
@@ -771,8 +768,8 @@
     <a class="fixed-plugin-button text-dark position-fixed px-3 py-2">
       <i class="fa fa-cog py-2"> </i>
     </a>
-    <div class="card shadow-lg">
-      <div class="card-header pb-0 pt-3">
+    <div class="card shadow-lg ">
+      <div class="card-header pb-0 pt-3 ">
         <div class="float-start">
           <h5 class="mt-3 mb-0">Soft UI Configurator</h5>
           <p>See our dashboard options.</p>
@@ -837,8 +834,6 @@
   <script src="../assets/js/core/popper.min.js"></script>
   <script src="../assets/js/core/bootstrap.min.js"></script>
   <script src="../assets/js/plugins/smooth-scrollbar.min.js"></script>
-  <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
-  <script src="../assets/js/soft-ui-dashboard.min.js?v=1.0.1"></script>
   <script>
     var win = navigator.platform.indexOf('Win') > -1;
     if (win && document.querySelector('#sidenav-scrollbar')) {
@@ -850,6 +845,8 @@
   </script>
   <!-- Github buttons -->
   <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
+  <script src="../assets/js/soft-ui-dashboard.min.js?v=1.0.2"></script>
 </body>
 
 </html>

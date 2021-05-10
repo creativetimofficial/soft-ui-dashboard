@@ -176,13 +176,6 @@
                       > span.sidenav-normal{
                         transition: all .1s ease 0s;
                       }
-
-                      span.sidenav-mini-icon{
-                        min-width: $navbar-icon-min-width;
-                        text-align: center;
-                        transition: all .1s ease 0s;
-                        margin-left: $navbar-icon-min-width - .15;
-                      }
                     }
                 }
             }
@@ -216,7 +209,7 @@
 //
 
 .sidenav {
-    z-index: 1050;
+    z-index: 990;
 
     .navbar-brand,
     .navbar-heading {
