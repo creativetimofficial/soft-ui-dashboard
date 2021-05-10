@@ -110,6 +110,8 @@ $height-200:                        200px !default;
 $height-300:                        300px !default;
 $height-400:                        400px !default;
 $height-500:                        500px !default;
+$height-600:                        600px !default;
+
 
 // extra min height values variables - CT
 $min-height-100:                    100px !default;
@@ -264,7 +266,8 @@ $height: (
   "200": $height-200,
   "300": $height-300,
   "400": $height-400,
-  "500": $height-500
+  "500": $height-500,
+  "600": $height-600
 ) !default;
 
 $min-height: (
