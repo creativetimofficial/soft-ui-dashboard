@@ -84,6 +84,25 @@
   }
 }
 
+.btn-check{
+  &:checked{
+    +.btn{
+      svg{
+        .color-background{
+          fill: $white;
+        }
+      }
+      &:hover{
+        svg{
+          .color-background{
+            fill: $dark;
+          }
+        }
+      }
+    }
+  }
+}
+
 .icon-move-right {
   i {
     transition: $btn-icon-transition;

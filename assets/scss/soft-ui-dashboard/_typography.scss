@@ -3,18 +3,8 @@ html *{
     -moz-osx-font-smoothing: grayscale;
 }
 body {
-  color: $font-color;
   font-weight: $font-weight-normal;
   line-height: $p-line-height;
-  background-color: $body-bg;
-}
-h1, .h1,
-h2, .h2,
-h3, .h3,
-h4, .h4,
-h5, .h5,
-h6, .h6 {
-  color: $h-color
 }
 
 h1, .h1 {
@@ -102,7 +92,7 @@ h4, .h4 {
 
 a {
   letter-spacing: $a-letter-spacing;
-  color: $black;
+  color: $dark;
 }
 
 .text-sm {
@@ -164,36 +154,6 @@ p {
   @include text-truncate();
 }
 
-// Responsive alignment
-@each $breakpoint in map-keys($grid-breakpoints) {
-  @include media-breakpoint-up($breakpoint) {
-    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
-
-    .text#{$infix}-left {
-      text-align: left !important;
-    }
-
-    .text#{$infix}-right {
-      text-align: right !important;
-    }
-
-    .text#{$infix}-center {
-      text-align: center !important;
-    }
-  }
-}
-// Transformation
-.text-lowercase {
-  text-transform: lowercase !important;
-}
-
-.text-uppercase {
-  text-transform: uppercase !important;
-}
-
-.text-capitalize {
-  text-transform: capitalize !important;
-}
 // Weight and italics
 .font-weight-light {
   font-weight: $font-weight-light !important;

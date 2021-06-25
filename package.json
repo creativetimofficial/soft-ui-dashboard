@@ -1,6 +1,6 @@
 {
   "name": "soft-ui-dashboard",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Freebie Dashboard for Bootstrap 5",
   "main": "pages/dashboard.html",
   "directories": {

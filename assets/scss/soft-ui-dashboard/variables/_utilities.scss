@@ -32,40 +32,6 @@ $margin-10:                     12rem !default;
 $margin-11:                     14rem !default;
 $margin-12:                     16rem !default;
 
-// extra margins utilities variables - CT
-$opacity-0:                     0 !default;
-$opacity-1:                     .1 !default;
-$opacity-2:                     .2 !default;
-$opacity-3:                     .3 !default;
-$opacity-4:                     .4 !default;
-$opacity-5:                     .5 !default;
-$opacity-6:                     .6 !default;
-$opacity-7:                     .7 !default;
-$opacity-8:                     .8 !default;
-$opacity-9:                     .9 !default;
-$opacity-10:                    1 !default;
-
-// Z-index
-$z-index: (
-  "0": 0,
-  "1": 1,
-  "2": 2,
-  "3": 3
-) !default;
-
-// extra right values variables - CT
-$right-0:                     0% !default;
-$right-1:                     1% !default;
-$right-2:                     2% !default;
-$right-3:                     3% !default;
-$right-4:                     4% !default;
-$right-5:                     5% !default;
-$right-6:                     6% !default;
-$right-7:                     7% !default;
-$right-8:                     8% !default;
-$right-9:                     9% !default;
-$right-10:                    10% !default;
-
 // extra width values variables - CT
 $width-0:                     0% !default;
 $width-1:                     1% !default;
@@ -135,40 +101,17 @@ $max-height-400:                    400px !default;
 $max-height-500:                    500px !default;
 $max-height-600:                    600px !default;
 
-// letter spacing - CT
-$letter-spacing-1:                  1px !default;
-$letter-spacing-2:                  2px !default;
-$letter-spacing-3:                  3px !default;
-$letter-spacing-4:                  4px !default;
-$letter-spacing-5:                  5px !default;
-
-// top values - CT
-$top-1:                             1rem !default;
-$top-2:                             2rem !default;
-$top-3:                             3rem !default;
-$top-4:                             4rem !default;
-$top-5:                             5rem !default;
-
-// bottom values - CT
-$bottom-1:                             1rem !default;
-$bottom-2:                             2rem !default;
-$bottom-3:                             3rem !default;
-$bottom-4:                             4rem !default;
-$bottom-5:                             5rem !default;
-
-// left values - CT
-$left-1:                             1rem !default;
-$left-2:                             2rem !default;
-$left-3:                             3rem !default;
-$left-4:                             4rem !default;
-$left-5:                             5rem !default;
-
-// right values - CT
-$right-1:                             1rem !default;
-$right-2:                             2rem !default;
-$right-3:                             3rem !default;
-$right-4:                             4rem !default;
-$right-5:                             5rem !default;
+// extra min height vh values variables - CT
+$max-height-vh-10:                    10vh !default;
+$max-height-vh-20:                    20vh !default;
+$max-height-vh-30:                    30vh !default;
+$max-height-vh-40:                    40vh !default;
+$max-height-vh-50:                    50vh !default;
+$max-height-vh-60:                    60vh !default;
+$max-height-vh-70:                    70vh !default;
+$max-height-vh-80:                    80vh !default;
+$max-height-vh-90:                    90vh !default;
+$max-height-vh-100:                   100vh !default;
 
 // Extra Padding values Map
 $paddings: (
@@ -190,35 +133,6 @@ $margins: (
   "10": $margin-10,
   "11": $margin-11,
   "12": $margin-12
-) !default;
-
-// Extra Opacity values Map
-$opacities: (
-  "0": $opacity-0,
-  "1": $opacity-1,
-  "2": $opacity-2,
-  "3": $opacity-3,
-  "4": $opacity-4,
-  "5": $opacity-5,
-  "6": $opacity-6,
-  "7": $opacity-7,
-  "8": $opacity-8,
-  "9": $opacity-9,
-  "10": $opacity-10
-) !default;
-
-$end: (
-  "0": $right-0,
-  "1": $right-1,
-  "2": $right-2,
-  "3": $right-3,
-  "4": $right-4,
-  "5": $right-5,
-  "6": $right-6,
-  "7": $right-7,
-  "8": $right-8,
-  "9": $right-9,
-  "10": $right-10
 ) !default;
 
 $width: (
@@ -251,93 +165,9 @@ $width: (
   "90": $width-90,
   "95": $width-95,
   "100": $width-100,
+  "auto": auto
 ) !default;
 
-$max-width: (
-  "100": $max-width-100,
-  "200": $max-width-200,
-  "300": $max-width-300,
-  "400": $max-width-400,
-  "500": $max-width-500
-) !default;
-
-$height: (
-  "100": $height-100,
-  "200": $height-200,
-  "300": $height-300,
-  "400": $height-400,
-  "500": $height-500,
-  "600": $height-600
-) !default;
-
-$min-height: (
-  "100": $min-height-100,
-  "150": $min-height-150,
-  "160": $min-height-160,
-  "200": $min-height-200,
-  "250": $min-height-250,
-  "300": $min-height-300,
-  "400": $min-height-400,
-  "500": $min-height-500,
-  "600": $min-height-600
-) !default;
-
-$max-height: (
-  "100": $max-height-100,
-  "150": $max-height-150,
-  "160": $max-height-160,
-  "200": $max-height-200,
-  "250": $max-height-250,
-  "300": $max-height-300,
-  "400": $max-height-400,
-  "500": $max-height-500,
-  "600": $max-height-600
-) !default;
-
-$letterSpacing: (
-  "1": $letter-spacing-1,
-  "2": $letter-spacing-2,
-  "3": $letter-spacing-3,
-  "4": $letter-spacing-4,
-  "5": $letter-spacing-5
-) !default;
-
-
-$top: (
-  "0": 0,
-  "1": $top-1,
-  "2": $top-2,
-  "3": $top-3,
-  "4": $top-4,
-  "5": $top-5
-) !default;
-
-$right: (
-  "0": 0,
-  "1": $right-1,
-  "2": $right-2,
-  "3": $right-3,
-  "4": $right-4,
-  "5": $right-5
-) !default;
-
-$left: (
-  "0": 0,
-  "1": $left-1,
-  "2": $left-2,
-  "3": $left-3,
-  "4": $left-4,
-  "5": $left-5
-) !default;
-
-$bottom: (
-  "0": 0,
-  "1": $bottom-1,
-  "2": $bottom-2,
-  "3": $bottom-3,
-  "4": $bottom-4,
-  "5": $bottom-5
-) !default;
 
 // blur effect variables
 $blur-border-radius-rounded:    40px !default;

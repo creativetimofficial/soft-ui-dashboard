@@ -6,7 +6,7 @@
 // $soft-background-color: #fbfbfb !default;
 $soft-background-color: #ffffff !default; // Testing
 $font-color:            #67748e !default;
-$h-color:               #252f40 !default;
+$h-color:               #344767 !default;
 
 // Color system
 
@@ -22,18 +22,6 @@ $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black:    #000 !default;
 
-// fusv-disable
-$grays: (
-  "100": $gray-100,
-  "200": $gray-200,
-  "300": $gray-300,
-  "400": $gray-400,
-  "500": $gray-500,
-  "600": $gray-600,
-  "700": $gray-700,
-  "800": $gray-800,
-  "900": $gray-900
-) !default;
 // fusv-enable
 
 $blue:    #63B3ED !default;
@@ -69,7 +57,7 @@ $primary:       #cb0c9f !default;
 $secondary:     #8392AB !default;
 $info:          #17c1e8 !default;
 $success:       #82d616 !default;
-$warning:       #f53939 !default;
+$warning:       #fbcf33 !default;
 $danger:        #ea0606 !default;
 $light:         $gray-200 !default;
 $dark:          $h-color !default;
@@ -286,6 +274,13 @@ $spacers: (
   3: $spacer,
   4: $spacer * 1.5,
   5: $spacer * 3,
+  6: $spacer * 4,
+  7: $spacer * 6,
+  8: $spacer * 8,
+  9: $spacer * 10,
+  10: $spacer * 12,
+  11: $spacer * 14,
+  12: $spacer * 16,
 ) !default;
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;
@@ -296,6 +291,16 @@ $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) 
 
 $position-values: (
   0: 0,
+  1: 1%,
+  2: 2%,
+  3: 3%,
+  4: 4%,
+  5: 5%,
+  6: 6%,
+  7: 7%,
+  8: 8%,
+  9: 9%,
+  10: 10%,
   50: 50%,
   100: 100%
 ) !default;
@@ -513,7 +518,7 @@ $headings-font-family:        null !default;
 $headings-font-style:         null !default;
 $headings-font-weight:        400 !default;
 $headings-line-height:        1.2 !default;
-$headings-color:              null !default;
+$headings-color:              #344767 !default;
 
 // scss-docs-start display-headings
 $display-font-sizes: (
@@ -1567,7 +1572,23 @@ $tilt-transform-up-transition:      all 0.5s !default;
 @import 'variables/header';
 @import 'variables/info-areas';
 @import 'variables/navbar';
+@import 'variables/navbar-vertical';
 @import 'variables/utilities';
+@import 'variables/utilities-extend';
 @import 'variables/misc';
+@import 'variables/misc-extend';
 @import 'variables/form-switch';
+@import 'variables/fixed-plugin';
 @import 'variables/pagination';
+@import 'variables/badge';
+@import 'variables/rtl';
+@import 'variables/cards-extend';
+@import 'variables/choices';
+@import 'variables/timeline';
+@import 'variables/full-calendar';
+@import 'variables/social-buttons';
+@import 'variables/virtual-reality';
+
+
+// Import Utilities
+@import "utilities";
