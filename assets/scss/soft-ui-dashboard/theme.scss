@@ -1,7 +1,7 @@
 /*!
 
 =========================================================
-* Soft UI Dashboard - v1.0.0
+* Soft UI Dashboard - v1.0.3
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/soft-ui-dashboard
@@ -21,40 +21,40 @@
 // Variables
 @import "variables/navbar-vertical";
 @import "variables/social-buttons";
-@import "variables/rtl";
 @import "variables/breadcrumb";
-@import 'variables/fixed-plugin';
-@import 'variables/timeline';
 
 // Mixin
-@import "mixins/hover";
-@import "mixins/social-buttons";
+@import "mixins/mixins";
 
 // Core Components - extra styling
 @import "alert";
-@import "avatars/avatar";
+@import "avatars";
 @import "badge";
 @import "buttons";
-@import "breadcrumbs/breadcrumb";
+@import "breadcrumbs";
 @import "cards";
 @import "dropdown";
 @import "dropup";
 @import "header";
+@import "fixed-plugin";
 @import "forms/forms";
 @import "footer";
 @import "gradients";
 @import "info-areas";
 @import "misc";
 @import "navbar";
+@import "navbar-vertical";
 @import "nav";
+@import "pagination";
+@import "popovers";
+@import "progress";
+@import "rtl";
+@import "social-buttons";
 @import "tables";
 @import "timeline";
+@import "tilt";
+@import "tooltips";
 @import "typography";
-@import "utilities";
-@import "fixed-plugin";
 
-// Dashboard Free components
-@import "navbar";
-@import "navbar-vertical";
-@import "social-buttons";
-@import "rtl";
+// Plugins
+@import "plugins/free/plugins";

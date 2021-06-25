@@ -162,6 +162,10 @@ hr.horizontal {
   border-top-left-radius: 0;
 }
 
+.border-dashed{
+  border-style: dashed;
+}
+
 .z-index-sticky {
   z-index: $zindex-sticky;
 }
@@ -267,5 +271,51 @@ hr.horizontal {
 .popover {
   .popover-header {
     font-weight: 600;
+  }
+}
+
+
+// Background Sizes
+.bg-cover{
+  background-size: cover;
+}
+
+// Mask Class
+.mask {
+  position: $mask-position;
+  background-size: $mask-bg-size;
+  background-position: $mask-bg-position;
+  top: $mask-top;
+  left: $mask-left;
+  width: $mask-width;
+  height: $mask-height;
+  opacity: $mask-opacity;
+}
+
+
+// Cursor Pointer Class
+.cursor-pointer {
+  cursor: pointer;
+}
+
+// Translate 50% Class
+.transform-translate-50{
+  transform: translate(0,-50%)
+}
+
+// VR Pages
+
+@include media-breakpoint-up(lg) {
+  .virtual-reality {
+    .sidenav {
+      margin-top: $spacer * 1.5;
+      animation-name: $animation-name;
+      animation-fill-mode: $animation-mode;
+      animation-duration: $animation-duration;
+      transform: $transform-scale;
+      background: $white;
+      left: $position-left !important;
+      position: absolute;
+    }
   }
 }
