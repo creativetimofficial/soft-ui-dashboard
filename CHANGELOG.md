@@ -1,5 +1,16 @@
 # Change Log
 
+## [1.0.4] 2022-03-18
+### Updates & Bugfixing
+- upgrade Bootstrap version to v5.1.3
+- upgrade ChartJs plugin version to v3.7.1
+- fix running 'npm install' issue
+- fix SCSS compiling issues
+- update sidebar height
+- fix sidebar button on Safari
+- update dropdown text on RTL page
+- fix navbar scroll error on example pages
+
 ## [1.0.3] 2021-06-25
 ### Updates & Improvements
 - upgrade Bootstrap version to v5.0.2
