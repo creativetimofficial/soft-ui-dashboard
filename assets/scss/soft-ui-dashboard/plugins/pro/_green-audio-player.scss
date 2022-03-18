@@ -1,0 +1,245 @@
+// animations
+@keyframes spin {
+  from {
+    transform: rotateZ(0);
+  }
+
+  to {
+    transform: rotateZ(1turn);
+  }
+}
+
+// css
+.green-audio-player {
+	min-width: 300px;
+	display: flex !important;
+	justify-content: space-between;
+	align-items: center;
+	user-select: none;
+	background-color: $white;
+	box-sizing: border-box;
+	outline: none;
+
+	&.player-accessible {
+		.play-pause-btn,
+		.controls,
+		.volume__button,
+		.volume__controls,
+		.download {
+			&:hover {
+				outline: dotted 1px $gray-500;
+			}
+		}
+	}
+
+	svg,
+	img {
+		display: block;
+	}
+
+	.holder {
+		position: relative;
+
+		.loading {
+			.loading__spinner {
+				position: absolute;
+				left: -3px;
+				bottom: 2px;
+				width: 16px;
+				height: 16px;
+				border: 2px solid $gray-200;
+				border-right-color: transparent;
+				border-radius: 50%;
+				animation: spin 0.4s linear infinite;
+			}
+		}
+
+		.play-pause-btn {
+			visibility: hidden;
+			cursor: pointer;
+			outline: none;
+
+			&:focus {
+				outline: none;
+			}
+		}
+	}
+
+	.slider {
+		flex-grow: 1;
+		background-color: $gray-200;
+		cursor: pointer;
+		position: relative;
+
+		.gap-progress {
+			background-color: $primary;
+			border-radius: inherit;
+			position: absolute;
+			pointer-events: none;
+
+			.pin {
+				height: 16px;
+				width: 16px;
+				border-radius: 8px;
+				background-color: $primary;
+				position: absolute;
+				pointer-events: all;
+				box-shadow: 0 1px 1px 0 $box-shadow-lg;
+
+				&::after {
+					content: "";
+					display: block;
+					background: transparent;
+					width: 200%;
+					height: 200%;
+					margin-left: -50%;
+					margin-top: -50%;
+					border-radius: 50%;
+				}
+			}
+		}
+	}
+
+	.controls {
+		font-family: "Roboto", sans-serif;
+		font-size: 16px;
+		line-height: 18px;
+		color: $dark;
+		display: flex;
+		flex-grow: 1;
+		justify-content: space-between;
+		align-items: center;
+		margin-left: 15px;
+		margin-right: 15px;
+		outline: none;
+
+		.controls__slider {
+			margin-left: 16px;
+			margin-right: 16px;
+			border-radius: 2px;
+			height: 4px;
+
+			.controls__progress {
+				width: 0;
+				height: 100%;
+
+				.progress__pin {
+					right: -8px;
+					top: -6px;
+				}
+			}
+		}
+
+		span {
+			cursor: default;
+		}
+
+		&:focus {
+			outline: none;
+		}
+	}
+
+	.volume {
+		position: relative;
+
+		.volume__button {
+			cursor: pointer;
+			outline: none;
+
+			&:focus {
+				outline: none;
+			}
+
+			&.open {
+				path {
+					fill: $primary;
+					}
+				}
+			}
+
+		.volume__controls {
+			width: 30px;
+			height: 135px;
+			background-color: $gray-700;
+      box-shadow: $box-shadow-lg;
+			border-radius: 7px;
+			position: absolute;
+			left: -3px;
+			bottom: 52px;
+			flex-direction: column;
+			align-items: center;
+			display: flex;
+			z-index: 2;
+			outline: none;
+
+			.volume__slider {
+				margin-top: 12px;
+				margin-bottom: 12px;
+				width: 6px;
+				border-radius: 3px;
+
+				.volume__progress {
+					bottom: 0;
+					height: 100%;
+					width: 6px;
+
+					.volume__pin {
+						left: -5px;
+						top: -8px;
+					}
+				}
+			}
+
+			&:focus {
+				outline: none;
+			}
+
+			&.hidden {
+				display: none;
+			}
+
+			&.top {
+				bottom: 52px;
+				left: -3px;
+			}
+
+			&.middle {
+				bottom: -54px;
+				left: 54px;
+			}
+
+			&.bottom {
+				bottom: -164px;
+				left: -3px;
+			}
+		}
+	}
+
+	.download {
+		display: none;
+		margin-left: 16px;
+		cursor: pointer;
+		outline: none;
+
+		&:focus {
+			outline: none;
+		}
+	}
+
+	&:focus {
+		outline: none;
+	}
+}
+
+.message__offscreen {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	word-wrap: normal;
+}

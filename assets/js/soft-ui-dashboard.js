@@ -15,7 +15,7 @@
     };
 
     if (document.getElementsByClassName('navbar-collapse')[0]) {
-      var fixedplugin = document.querySelector('.navbar-collapse');
+      var fixedplugin = document.querySelector('.navbar:not(.navbar-expand-lg) .navbar-collapse');
       var ps2 = new PerfectScrollbar(fixedplugin);
     };
 
@@ -220,15 +220,17 @@ function sidebarColor(a) {
   var sidebar = document.querySelector('.sidenav');
   sidebar.setAttribute("data-color", color);
 
-  var sidenavCard = document.querySelector('#sidenavCard');
-  let sidenavCardClasses = ['card', 'card-background', 'shadow-none', 'card-background-mask-' + color];
-  sidenavCard.className = '';
-  sidenavCard.classList.add(...sidenavCardClasses);
+  if (document.querySelector('#sidenavCard')) {
+    var sidenavCard = document.querySelector('#sidenavCard');
+    let sidenavCardClasses = ['card', 'card-background', 'shadow-none', 'card-background-mask-' + color];
+    sidenavCard.className = '';
+    sidenavCard.classList.add(...sidenavCardClasses);
 
-  var sidenavCardIcon = document.querySelector('#sidenavCardIcon');
-  let sidenavCardIconClasses = ['ni', 'ni-diamond', 'text-gradient', 'text-lg', 'top-0', 'text-' + color];
-  sidenavCardIcon.className = '';
-  sidenavCardIcon.classList.add(...sidenavCardIconClasses);
+    var sidenavCardIcon = document.querySelector('#sidenavCardIcon');
+    let sidenavCardIconClasses = ['ni', 'ni-diamond', 'text-gradient', 'text-lg', 'top-0', 'text-' + color];
+    sidenavCardIcon.className = '';
+    sidenavCardIcon.classList.add(...sidenavCardIconClasses);
+  }
 
 }
 
@@ -251,6 +253,7 @@ function navbarFixed(el) {
 };
 
 // Navbar blur on scroll
+
 function navbarBlurOnScroll(id) {
   const navbar = document.getElementById(id);
   let navbarScrollActive = navbar ? navbar.getAttribute("navbar-scroll") : false;
@@ -280,10 +283,12 @@ function navbarBlurOnScroll(id) {
   }
 
   function transparentNavbar() {
-    navbar.classList.remove(...classes)
-    navbar.classList.add(...toggleClasses)
+    if (navbar) {
+      navbar.classList.remove(...classes)
+      navbar.classList.add(...toggleClasses)
 
-    toggleNavLinksColor('transparent');
+      toggleNavLinksColor('transparent');
+    }
   }
 
   function toggleNavLinksColor(type) {
@@ -309,6 +314,7 @@ function navbarBlurOnScroll(id) {
     }
   }
 }
+
 
 // Debounce Function
 // Returns a function, that, as long as it continues to be invoked, will not
@@ -336,8 +342,11 @@ function sidebarType(a) {
   var parent = a.parentElement.children;
   var color = a.getAttribute("data-class");
 
+  var colors = [];
+
   for (var i = 0; i < parent.length; i++) {
     parent[i].classList.remove('active');
+    colors.push(parent[i].getAttribute('data-class'));
   }
 
   if (!a.classList.contains('active')) {
@@ -347,8 +356,10 @@ function sidebarType(a) {
   }
 
   var sidebar = document.querySelector('.sidenav');
-  sidebar.classList.remove('bg-transparent');
-  sidebar.classList.remove('bg-white');
+
+  for (var i = 0; i < colors.length; i++) {
+    sidebar.classList.remove(colors[i]);
+  }
 
   sidebar.classList.add(color);
 }
