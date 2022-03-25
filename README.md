@@ -65,7 +65,7 @@ Let us know your thoughts below. And good luck with development!
 
 | HTML |
 | --- |
-| [![Soft UI Dashboard HTML](https://s3.amazonaws.com/creativetim_bucket/products/450/original/opt_sd_free_thumbnail.jpg?1617715816)](http://demos.creative-tim.com/soft-ui-dashboard/pages/dashboard.html?ref=readme-sud)
+| [![Soft UI Dashboard HTML](https://s3.amazonaws.com/creativetim_bucket/products/450/thumb/opt_sd_free_thumbnail.jpg?1617715816)](http://demos.creative-tim.com/soft-ui-dashboard/pages/dashboard.html?ref=readme-sud)
 
 ## Demo
 
