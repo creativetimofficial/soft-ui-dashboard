@@ -98,6 +98,21 @@
         }
       }
     }
+    &.nav-pills-dark {
+      background: $white;
+      color: $white;
+      .nav-link{
+        &.active{
+          color: $white;
+        }
+      }
+      .moving-tab {
+        .nav-link.active {
+          background: $dark-gradient;
+          color: $dark-gradient;
+        }
+      }
+    }
     .nav-item{
       z-index: 3;
     }

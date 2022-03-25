@@ -5,25 +5,55 @@
   .dropend {
     .dropdown-menu {
       box-shadow: $dropdown-box-shadow;
-      transition: $dropdown-transition;
       cursor: pointer;
     }
 
     .dropdown-toggle {
-      &:after{
-        content: "\f107";
+      &:after,
+      &:before{
         font: normal normal normal 14px/1 FontAwesome;
         border: none;
         vertical-align: middle;
         font-weight: $font-weight-bold;
       }
       &.show{
-        &:after{
+        &:after,
+        &:before{
           transform: $dropdown-toggle-arrow-transform;
         }
       }
-      &:after{
+      &:after,
+      &:before{
          transition: $dropdown-toggle-arrow-transition;
+      }
+    }
+  }
+
+  .dropdown,
+  .dropup{
+    .dropdown-menu{
+      transition: $dropdown-transition;
+    }
+
+    .dropdown-toggle {
+      &:after{
+        content: "\f107";
+      }
+    }
+  }
+
+  .dropstart{
+    .dropdown-toggle {
+      &:before{
+        content: "\f104";
+      }
+    }
+  }
+
+  .dropend{
+    .dropdown-toggle {
+      &:after{
+        content: "\f105";
       }
     }
   }
@@ -95,9 +125,60 @@
 }
 
 @include media-breakpoint-down(lg) {
-  .dropdown:not(.nav-item) {
+  .navbar-toggler + .navbar-collapse {
+    .dropdown:not(.nav-item) {
+      .dropdown-menu {
+        display: block;
+        opacity: 0;
+        top: 0;
+        transform-origin: $dropdown-transform-origin;
+        pointer-events: none;
+        transform: $dropdown-transform;
+        transition: $dropdown-transition;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        will-change: transform,box-shadow;
+        box-shadow: $dropdown-box-shadow;
+
+        &:before {
+          font-family: "FontAwesome";
+          content: "\f0d8";
+          position: absolute;
+          top: 0;
+          left: $dropdown-animation-arrow-left-position;
+          right: auto;
+          font-size: $dropdown-animation-arrow-font-size;
+          color: $white;
+          transition: $dropdown-animation-arrow-transition;
+        }
+      }
+
+      &:not(.dropdown-hover) .dropdown-menu {
+        margin-top: $dropdown-mt !important;
+      }
+
+      .dropdown-menu.show {
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+        transform: $dropdown-transform-show;
+
+        &:before {
+          top: $dropdown-hover-arrow-active-top;
+        }
+      }
+    }
+    .dropdown.nav-item .dropdown-menu {
+      background-color: transparent;
+      overflow: scroll;
+      position: relative;
+      transform: none !important;
+      box-shadow: none !important;
+    }
+  }
+
+  :not(.navbar) .dropdown {
     .dropdown-menu {
-      display: block;
       opacity: 0;
       top: 0;
       transform-origin: $dropdown-transform-origin;
@@ -121,7 +202,6 @@
         transition: $dropdown-animation-arrow-transition;
       }
     }
-
     &:not(.dropdown-hover) .dropdown-menu {
       margin-top: $dropdown-mt !important;
     }
@@ -130,18 +210,20 @@
       opacity: 1;
       pointer-events: auto;
       visibility: visible;
-      transform: $dropdown-transform-show;
 
       &:before {
         top: $dropdown-hover-arrow-active-top;
       }
     }
+
+    &.nav-item {
+      .dropdown-menu {
+        position: absolute;
+      }
+    }
   }
 
-  .dropdown.nav-item .dropdown-menu {
-    background-color: transparent;
-    overflow: scroll;
-  }
+
 
   .dropdown.nav-item .dropdown-menu-animation {
     display: block;
@@ -154,6 +236,16 @@
     &.show {
       height: 250px;
       opacity: 1;
+    }
+  }
+
+  .navbar.blur {
+    .dropdown {
+      .dropdown-menu.show {
+        transform: $dropdown-transform-responsive-show;
+        box-shadow: none;
+        margin-bottom: 1rem;  
+      }
     }
   }
 }

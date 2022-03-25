@@ -82,6 +82,12 @@
   &.btn-rounded {
     border-radius: $btn-border-rounded;
   }
+
+  &.btn-transparent {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+  }
 }
 
 .btn-check{

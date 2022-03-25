@@ -10771,6 +10771,10 @@ fieldset:disabled .btn {
   height: 100px !important;
 }
 
+.height-150 {
+  height: 150px !important;
+}
+
 .height-200 {
   height: 200px !important;
 }
@@ -19774,7 +19778,7 @@ fieldset:disabled .btn {
 /*!
 
 =========================================================
-* Soft UI Dashboard - v1.0.4
+* Soft UI Dashboard - v1.0.5
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/soft-ui-dashboard
@@ -21181,6 +21185,37 @@ fieldset:disabled .btn {
 
 .form-group {
   margin-bottom: 1rem;
+}
+
+.input-group-text {
+  position: absolute;
+  z-index: 9999;
+  height: 100%;
+  border-right: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: -1px;
+}
+
+.form-control {
+  border-radius: 0.5rem;
+  border-top-left-radius: 0.5rem !important;
+  border-bottom-left-radius: 0.5rem !important;
+  padding-left: 35px !important;
+  border-left-width: 1px;
+}
+
+.focused {
+  box-shadow: 0 0 0 2px #e9aede;
+  transition: box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.focused .form-control:focus {
+  box-shadow: none;
+}
+
+.focused .input-group-text {
+  border-color: #e293d3;
 }
 
 .form-check:not(.form-switch) .form-check-input[type="checkbox"],
