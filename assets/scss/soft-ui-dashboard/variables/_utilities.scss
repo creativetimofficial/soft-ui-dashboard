@@ -9,9 +9,17 @@ $move-hover-transform:          perspective(999px) rotateX(7deg) translate3d(0px
 
 // Sections Height Utilities
 $section-height-25-min-height:  25vh !default;
+$section-height-35-min-height:  35vh !default;
+$section-height-45-min-height:  45vh !default;
 $section-height-50-min-height:  50vh !default;
+$section-height-55-min-height:  55vh !default;
+$section-height-65-min-height:  65vh !default;
+$section-height-70-min-height:  70vh !default;
 $section-height-75-min-height:  75vh !default;
+$section-height-80-min-height:  80vh !default;
 $section-height-85-min-height:  85vh !default;
+$section-height-90-min-height:  90vh !default;
+$section-height-95-min-height:  95vh !default;
 $section-height-100-min-height: 100vh !default;
 
 // extra padding utilities variables - CT
@@ -72,6 +80,7 @@ $max-width-500:                     500px !default;
 
 // extra height values variables - CT
 $height-100:                        100px !default;
+$height-150:                        150px !default;
 $height-200:                        200px !default;
 $height-300:                        300px !default;
 $height-400:                        400px !default;
@@ -84,7 +93,7 @@ $min-height-100:                    100px !default;
 $min-height-150:                    150px !default;
 $min-height-160:                    160px !default;
 $min-height-200:                    200px !default;
-$min-height-250:                    200px !default;
+$min-height-250:                    250px !default;
 $min-height-300:                    300px !default;
 $min-height-400:                    400px !default;
 $min-height-500:                    500px !default;
@@ -95,7 +104,7 @@ $max-height-100:                    100px !default;
 $max-height-150:                    150px !default;
 $max-height-160:                    160px !default;
 $max-height-200:                    200px !default;
-$max-height-250:                    200px !default;
+$max-height-250:                    250px !default;
 $max-height-300:                    300px !default;
 $max-height-400:                    400px !default;
 $max-height-500:                    500px !default;

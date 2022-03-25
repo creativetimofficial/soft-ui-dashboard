@@ -11,6 +11,7 @@ $dropup-transform-origin:                  bottom !default;
 $dropup-transform:                         perspective(999px) rotateX(12deg) translateZ(0) translate3d(0px, 0px, 0px) !important !default;
 $dropup-transform-show:                    perspective(999px) rotateX(0deg) translateZ(0) translate3d(1px,0px,5px) !important !default;
 
+$dropdown-transform-responsive-show:       $dropdown-multilevel-transform-show !default;
 $dropdown-icon-margin-right:               .75rem !default;
 
 $dropdown-toggle-arrow-transform:          rotate(180deg) !default;

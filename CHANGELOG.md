@@ -1,5 +1,9 @@
 # Change Log
 
+## [1.0.5] 2022-03-25
+### Update
+- update SCSS folder
+
 ## [1.0.4] 2022-03-18
 ### Updates & Bugfixing
 - upgrade Bootstrap version to v5.1.3
