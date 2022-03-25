@@ -65,7 +65,7 @@ Let us know your thoughts below. And good luck with development!
 
 | HTML |
 | --- |
-| [![Soft UI Dashboard HTML](https://s3.amazonaws.com/creativetim_bucket/products/450/original/opt_sd_free_thumbnail.png)](http://demos.creative-tim.com/soft-ui-dashboard/pages/dashboard.html?ref=readme-sud)
+| [![Soft UI Dashboard HTML](https://s3.amazonaws.com/creativetim_bucket/products/450/original/opt_sd_free_thumbnail.jpg?1617715816)](http://demos.creative-tim.com/soft-ui-dashboard/pages/dashboard.html?ref=readme-sud)
 
 ## Demo
 
@@ -143,7 +143,7 @@ If you have questions or need help integrating the product please [contact us](h
 
 ## Licensing
 
-- Copyright 2021 [Creative Tim](https://www.creative-tim.com?ref=readme-sud)
+- Copyright 2022 [Creative Tim](https://www.creative-tim.com?ref=readme-sud)
 - Creative Tim [license](https://www.creative-tim.com/license?ref=readme-sud)
 
 ## Useful Links
