@@ -151,8 +151,7 @@
     }
   
     .g-sidenav-show & {
-      &:not(.sidenav).navbar-main,
-      &:not(.mixed-navbar) {
+      &:not(.sidenav).navbar-main {
         .navbar-collapse {
           display: flex !important;
           flex-basis: auto;
