@@ -26,6 +26,7 @@
 		}
 
     & + .input-group-text {
+      position: absolute;
       border-left: 0;
       border-right: $input-border-width solid $input-border-color;
     }
@@ -41,20 +42,16 @@
 }
 
 .input-group-text {
-  position: absolute;
   z-index: 9999;
-  height: 100%;
   border-right: 0;
   padding-left: 10px;
   padding-right: 10px;
-  margin-left: -1px;
 }
 
 .form-control {
   border-radius: $input-border-radius;
-  border-top-left-radius: $input-border-radius !important;
-  border-bottom-left-radius: $input-border-radius !important;
-  padding-left: 35px !important;
+  border-top-right-radius: $input-border-radius !important;
+  border-bottom-right-radius: $input-border-radius !important;
   border-left-width: 1px;
 }
 
@@ -66,8 +63,12 @@
     &:focus {
       box-shadow: none;
     }
+    + .input-group-text {
+      border-color: $input-focus-border-color;
+      border-right: $input-border-width solid $input-focus-border-color !important;
+    }
   }
-  .input-group-text{
+  .input-group-text {
     border-color: $input-focus-border-color;
   }
 }

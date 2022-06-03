@@ -1,5 +1,10 @@
 # Change Log
 
+## [1.0.6] 2022-06-03
+### Updates and Improvements
+- update Bootstrap to v5.2.0-beta1
+- fix input-group focus issue
+
 ## [1.0.5] 2022-03-25
 ### Update
 - update SCSS folder
