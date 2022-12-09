@@ -1,0 +1,4 @@
+@mixin make-container($gutter: $container-padding-x) {
+  padding-right: calc(var(--#{$prefix}gutter-x) * 1); // overwrite the Bootstrap padding right
+  padding-left: calc(var(--#{$prefix}gutter-x) * 1); // overwrite the Bootstrap padding left
+}
