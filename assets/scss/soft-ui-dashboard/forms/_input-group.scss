@@ -34,6 +34,10 @@
 
   .input-group-text {
     border-right: 0;
+
+    +.form-control {
+      border-left: none !important;
+    }
   }
 }
 
@@ -42,7 +46,6 @@
 }
 
 .input-group-text {
-  z-index: 9999;
   border-right: 0;
   padding-left: 10px;
   padding-right: 10px;

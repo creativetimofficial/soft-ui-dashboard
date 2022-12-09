@@ -1,5 +1,9 @@
 # Change Log
 
+## [1.0.7] 2022-12-09
+### Updates and Improvements
+- update Bootstrap to v5.2.3
+  
 ## [1.0.6] 2022-06-03
 ### Updates and Improvements
 - update Bootstrap to v5.2.0-beta1

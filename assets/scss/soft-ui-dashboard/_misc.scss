@@ -339,3 +339,14 @@ hr.horizontal {
     }
   }
 }
+
+// border inside iframe sections
+
+html {
+  border: none !important;
+}
+
+.container,
+.container-fluid {
+  @include make-container();
+}

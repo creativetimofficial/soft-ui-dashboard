@@ -187,8 +187,8 @@
 //
 
 .sidenav {
-  z-index: 9999;
-
+  z-index: $zindex-fixed;
+  
   .navbar-brand,
   .navbar-heading {
     display: block;
