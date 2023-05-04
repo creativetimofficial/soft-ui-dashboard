@@ -150,7 +150,7 @@ If you have questions or need help integrating the product please [contact us](h
 
 ## Licensing
 
-- Copyright 2022 [Creative Tim](https://www.creative-tim.com?ref=readme-sud)
+- Copyright 2023 [Creative Tim](https://www.creative-tim.com?ref=readme-sud)
 - Creative Tim [license](https://www.creative-tim.com/license?ref=readme-sud)
 
 ## Useful Links
@@ -170,5 +170,7 @@ Twitter: <https://twitter.com/CreativeTim>
 Facebook: <https://www.facebook.com/CreativeTim>
 
 Dribbble: <https://dribbble.com/creativetim>
+
+TikTok: <https://tiktok.com/@creative.tim>
 
 Instagram: <https://instagram.com/creativetimofficial>
