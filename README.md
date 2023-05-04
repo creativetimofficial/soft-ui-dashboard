@@ -42,6 +42,7 @@ View <a href="https://demos.creative-tim.com/soft-ui-dashboard/pages/dashboard.h
 During the development of this dashboard, we have used many existing resources from awesome developers. We want to thank them for providing their tools open source:
 - [Bootstrap 5](https://www.getbootstrap.com)- Open source front end framework
 - [Popper.js](https://popper.js.org/) - Kickass library used to manage poppers
+- [Nepcha Analytics](https://nepcha.com?ref=readme) for the analytics tool. Nepcha is already integrated with Soft UI Dashboard. You can use it to gain insights into your sources of traffic.
 
 Let us know your thoughts below. And good luck with development!
 
@@ -134,6 +135,7 @@ At present, we officially aim to support the last two versions of the following 
 - [License Agreement](https://www.creative-tim.com/license?ref=readme-sud)
 - [Support](https://www.creative-tim.com/contact-us?ref=readme-sud)
 - Issues: [Github Issues Page](https://github.com/creativetimofficial/soft-ui-dashboard/issues)
+- [Nepcha Analytics](https://nepcha.com?ref=readme) - Analytics tool for your website
 
 ## Reporting Issues
 We use GitHub Issues as the official bug tracker for the Soft UI Dashboard. Here are some advices for our users that want to report an issue:
@@ -148,7 +150,7 @@ If you have questions or need help integrating the product please [contact us](h
 
 ## Licensing
 
-- Copyright 2022 [Creative Tim](https://www.creative-tim.com?ref=readme-sud)
+- Copyright 2023 [Creative Tim](https://www.creative-tim.com?ref=readme-sud)
 - Creative Tim [license](https://www.creative-tim.com/license?ref=readme-sud)
 
 ## Useful Links
@@ -168,5 +170,7 @@ Twitter: <https://twitter.com/CreativeTim>
 Facebook: <https://www.facebook.com/CreativeTim>
 
 Dribbble: <https://dribbble.com/creativetim>
+
+TikTok: <https://tiktok.com/@creative.tim>
 
 Instagram: <https://instagram.com/creativetimofficial>
