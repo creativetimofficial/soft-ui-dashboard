@@ -54,6 +54,7 @@ Let us know your thoughts below. And good luck with development!
   - [Versions](#versions)
   - [Demo](#demo)
   - [Quick start](#quick-start)
+  - [Deploy](#deploy)
   - [Terminal Commands](#terminal-commands)
   - [Documentation](#documentation)
     - [What's included](#whats-included)
@@ -91,6 +92,12 @@ Quick start options:
 
 1. Download and Install NodeJs from [NodeJs Official Page](https://nodejs.org/en/download/).
 2. Navigate to the root / directory and run npm install to install our local dependencies.
+
+## Deploy
+
+:rocket: You can deploy your own version of the template to Genezio with one click:
+
+[![Deploy to Genezio](https://raw.githubusercontent.com/Genez-io/graphics/main/svg/deploy-button.svg)](https://app.genez.io/start/deploy?repository=https://github.com/creativetimofficial/soft-ui-dashboard&utm_source=github&utm_medium=referral&utm_campaign=github-creativetim&utm_term=deploy-project&utm_content=button-head)
 
 ## Documentation
 The documentation for the Soft UI Dashboard is hosted at our [website](https://www.creative-tim.com/learning-lab/bootstrap/overview/soft-ui-dashboard?ref=readme-sud).
