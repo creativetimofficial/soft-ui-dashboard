@@ -1,10 +1,7 @@
 .btn {
   margin-bottom: $btn-margin-bottom;
   letter-spacing: $a-letter-spacing;
-  text-transform: uppercase;
   box-shadow: $btn-box-shadow;
-  background-size: $btn-background-size;
-  background-position-x: $btn-background-position-x;
 
   &:not([class*="btn-outline-"]) {
     border: 0;
@@ -14,14 +11,12 @@
   &:active:focus,
   &:active:hover {
     box-shadow: $btn-hover-box-shadow;
-    transform: $btn-active-hover-transform;
     opacity: $btn-hover-opacity;
   }
 
   @include hover {
     &:not(.btn-icon-only){
       box-shadow: $btn-hover-box-shadow;
-      transform: $btn-hover-transform;
     }
   }
 

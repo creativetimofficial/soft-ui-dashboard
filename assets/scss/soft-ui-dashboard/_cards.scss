@@ -1,17 +1,17 @@
 .card {
-  box-shadow: $card-box-shadow;
+  box-shadow: $box-shadow-sm;
   .card-header {
     padding: $card-header-padding;
   }
 
   .card-body {
-    font-family: $font-family-sans-serif;
     padding: $card-body-padding;
   }
 
   &.card-plain {
     background-color: $card-plain-bg-color;
     box-shadow: $card-plain-box-shadow;
+    border: none;
   }
 
   .card-footer {

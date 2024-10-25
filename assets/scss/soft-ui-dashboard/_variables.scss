@@ -3,37 +3,44 @@
 // Variables should follow the `$component-state-property-size` formula for
 // consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
 
-// $soft-background-color: #fbfbfb !default;
-$soft-background-color: #ffffff !default; // Testing
-$font-color:            #67748e !default;
-$h-color:               #344767 !default;
 
 // Color system
 
 $white:    #fff !default;
-$gray-100: #f8f9fa !default;
-$gray-200: #e9ecef !default;
-$gray-300: #dee2e6 !default;
-$gray-400: #ced4da !default;
-$gray-500: #adb5bd !default;
-$gray-600: #6c757d !default;
-$gray-700: #495057 !default;
-$gray-800: #343a40 !default;
-$gray-900: #212529 !default;
+$gray-50:  #fafafa !default;
+$gray-100: #f4f4f5 !default;
+$gray-200: #e3e3e7 !default;
+$gray-300: #d4d4d8 !default;
+$gray-400: #a1a1aa !default;
+$gray-500: #71717a !default;
+$gray-600: #52525b !default;
+$gray-700: #3f3f46 !default;
+$gray-800: #27272a !default;
+$gray-900: #18181b !default;
+$gray-950: #09090b !default;
 $black:    #000 !default;
+
+// $soft-background-color: #fbfbfb !default;
+$soft-background-color: #ffffff !default; // Testing
+$font-color:            $gray-500 !default;
+$h-color:               $gray-800 !default;
+$headings-color:        $gray-800 !default;
+$bg-gray-50:            $gray-50 !default;
+
+
 
 // fusv-enable
 
-$blue:    #63B3ED !default;
-$indigo:  #596CFF !default;
-$purple:  #6f42c1 !default;
-$pink:    #d63384 !default;
-$red:     #F56565 !default;
-$orange:  #fd7e14 !default;
-$yellow:  #FBD38D !default;
-$green:   #81E6D9 !default;
-$teal:    #20c997 !default;
-$cyan:    #0dcaf0 !default;
+$blue:    #0ea5e9 !default;
+$indigo:  #6366f1 !default;
+$purple:  #a855f7 !default;
+$pink:    #ec4899 !default;
+$red:     #ef4444 !default;
+$orange:  #f97316 !default;
+$yellow:  #eab308 !default;
+$green:   #22c55e !default;
+$teal:    #14b8a6 !default;
+$cyan:    #06b6d4 !default;
 
 // scss-docs-start colors-map
 $colors: (
@@ -53,12 +60,12 @@ $colors: (
 ) !default;
 // scss-docs-end colors-map
 
-$primary:       #cb0c9f !default;
-$secondary:     #8392AB !default;
-$info:          #17c1e8 !default;
-$success:       #82d616 !default;
-$warning:       #fbcf33 !default;
-$danger:        #ea0606 !default;
+$primary:       $orange !default;
+$secondary:     $gray-500 !default;
+$info:          $blue !default;
+$success:       $green !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
 $light:         $gray-200 !default;
 $dark:          $h-color !default;
 
@@ -77,33 +84,56 @@ $theme-colors: (
 // scss-docs-end theme-colors-map
 
 
+$purple-600: #9333ea !default;
+$fuchsia-600: #c026d3 !default;
+$violet-600: #7c3aed !default;
+
+$red-600: #dc2626 !default;
+$green-600: #16a34a !default;
+$indigo-600: #4f46e5 !default;
+$lime-600: #65a30d !default;
+$yellow-600: #ca8a04 !default;
+$orange-600: #ea580c !default;
+
+$purple-400: #c084fc !default;
+$fuchsia-400: #e879f9 !default;
+$violet-400: #a78bfa !default;
+
+$red-400: #f87171 !default;
+$green-400: #4ade80 !default;
+$indigo-400: #818cf8 !default;
+$lime-400: #a3e635 !default;
+$yellow-400: #facc15 !default;
+$orange-400: #fb923c !default;
+
+
 // Gradient colors
-$primary-gradient:            #7928CA !default;
-$primary-gradient-state:      #FF0080 !default;
+$primary-gradient:            $orange-600 !default;
+$primary-gradient-state:      $yellow-400 !default;
 
-$secondary-gradient:          #627594 !default;
-$secondary-gradient-state:    #A8B8D8 !default;
+$secondary-gradient:          $gray-500 !default;
+$secondary-gradient-state:    $gray-200 !default;
 
-$info-gradient:               #2152ff !default;
-$info-gradient-state:         #21d4fd !default;
+$info-gradient:               $blue !default;
+$info-gradient-state:         $cyan !default;
 
-$success-gradient:            #17ad37 !default;
+$success-gradient:            $green !default;
 $success-gradient-state:      #98ec2d !default;
 
-$danger-gradient:             #ea0606 !default;
-$danger-gradient-state:       #ff667c !default;
+$danger-gradient:             $red !default;
+$danger-gradient-state:       $pink !default;
 
-$warning-gradient:            #f53939 !default;
-$warning-gradient-state:      #fbcf33 !default;
+$warning-gradient:            $yellow !default;
+$warning-gradient-state:      $orange !default;
 
-$dark-gradient:               #141727 !default;
-$dark-gradient-state:         #3A416F !default;
+$dark-gradient:               $gray-800 !default;
+$dark-gradient-state:         $gray-900 !default;
 
-$light-gradient:              #CED4DA !default;
-$light-gradient-state:        #EBEFF4 !default;
+$light-gradient:              $gray-200 !default;
+$light-gradient-state:        $gray-100 !default;
 
-$dark-gradient-dark:          #323a54 !default;
-$dark-gradient-state-dark:    #1a2035 !default;
+$dark-gradient-dark:          $gray-800 !default;
+$dark-gradient-state-dark:    $gray-900 !default;
 
 // Gradient Colors map
 $theme-gradient-colors: (
@@ -539,11 +569,11 @@ $border-widths: (
 
 $rounded-pill:                50rem !default;
 
-$box-shadow-xs:               0 2px 9px -5px rgba($black, 0.15) !default;
-$box-shadow-sm:               0 .25rem .375rem -.0625rem rgba(20, 20, 20, .12), 0 .125rem .25rem -.0625rem rgba(20, 20, 20, .07) !default;
-$box-shadow:                  0 .3125rem .625rem 0 rgba(0, 0, 0, 0.12) !default;
-$box-shadow-lg:               0 8px 26px -4px rgba(20, 20, 20, 0.15), 0 8px 9px -5px rgba(20, 20, 20, 0.06) !default;
-$box-shadow-xl:                0 23px 45px -11px rgba(20, 20, 20, .25) !default;
+$box-shadow-xs:               0 1px 2px 0 rgba($black, 0.05) !default;
+$box-shadow-sm:               0 1px 3px 0 rgba($black, 0.1), 0 1px 2px -1px rgba($black, 0.1) !default;
+$box-shadow:                  0 4px 6px -1px rgba($black, 0.1), 0 2px 4px -2px rgba($black, 0.1) !default;
+$box-shadow-lg:               0 10px 15px -3px rgba($black, 0.1), 0 4px 6px -4px rgba($black, 0.1) !default;
+$box-shadow-xl:               0 20px 25px -5px rgba($black, 0.1), 0 8px 10px -6px rgba($black, 0.1) !default;
 $box-shadow-inset:            inset 0 1px 2px rgba($black, .075) !default;
 
 $component-active-color:      $white !default;
@@ -573,7 +603,7 @@ $aspect-ratios: (
 // Font, line-height, and color for body text, headings, and more.
 
 // stylelint-disable value-keyword-case
-$font-family-sans-serif:      'Open Sans' !default;
+$font-family-sans-serif:      'Inter' !default;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 // stylelint-enable value-keyword-case
 $font-family-base:            var(--bs-font-sans-serif) !default;
@@ -682,12 +712,12 @@ $text-gradient-bg-clip:       text !default;
 $text-gradient-text-fill:     transparent !default;
 $text-gradient-position:      relative !default;
 $text-gradient-zindex:        1 !default;
-$text-gradient-bg-primary:    linear-gradient(310deg, #7928CA, #FF0080) !default;
-$text-gradient-bg-info:       linear-gradient(310deg, #2152FF, #21D4FD) !default;
-$text-gradient-bg-success:    linear-gradient(310deg, #17AD37, #C1E823) !default;
-$text-gradient-bg-warning:    linear-gradient(310deg, #F53939, #FBCF33) !default;
-$text-gradient-bg-danger:     linear-gradient(310deg, #D60808, #FF6690) !default;
-$text-gradient-bg-dark:     linear-gradient(310deg, #141727, #3A416F) !default;
+$text-gradient-bg-primary:    linear-gradient(310deg, $orange-600, $yellow-400) !default;
+$text-gradient-bg-info:       linear-gradient(310deg, $indigo-600, $cyan-600) !default;
+$text-gradient-bg-success:    linear-gradient(310deg, $green-600, $lime-600) !default;
+$text-gradient-bg-warning:    linear-gradient(310deg, $yellow-600, $orange-600) !default;
+$text-gradient-bg-danger:     linear-gradient(310deg, $red-600, $pink-400) !default;
+$text-gradient-bg-dark:       linear-gradient(310deg, $gray-800, $gray-900) !default;
 
 $initialism-font-size:        $small-font-size !default;
 
@@ -720,7 +750,7 @@ $letter-wider:                .05rem !default;
 $letter-normal:               0rem !default;
 $letter-tighter:              -0.05rem !default;
 $h1-letter-spacing:           0.1rem !default;
-$a-letter-spacing:            -0.025rem !default;
+$a-letter-spacing:            0.0025rem !default;
 
 // Tables
 //
@@ -967,10 +997,10 @@ $input-border-radius-sm:                $border-radius-md !default;
 $input-border-radius-lg:                $border-radius-md !default;
 
 $input-focus-bg:                        $white !default;
-$input-focus-border-color:              #e293d3 !default;
+$input-focus-border-color:              $gray-400 !default;
 $input-focus-color:                     $input-color !default;
-$input-focus-width:                     2px !default;
-$input-focus-box-shadow:                0 0 0 $input-focus-width #e9aede !default;
+$input-focus-width:                     1px !default;
+$input-focus-box-shadow:                0 0 0 $input-focus-width $gray-400 !default;
 
 $input-placeholder-color:               $gray-500 !default;
 $input-plaintext-color:                 $dark !default;
@@ -1355,7 +1385,7 @@ $card-spacer-y:                     $spacer !default;
 $card-spacer-x:                     $spacer !default;
 $card-title-spacer-y:               $spacer * 0.5 !default;
 $card-border-width:                 0 !default;
-$card-border-radius:                1rem !default;
+$card-border-radius:                0.75rem !default;
 $card-border-color:                 rgba($black, .125) !default;
 $card-inner-border-radius:          subtract($card-border-radius, $card-border-width) !default;
 $card-cap-padding-y:                $card-spacer-y * 0.5 !default;

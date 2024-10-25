@@ -18,7 +18,7 @@
       padding-left: $navbar-padding-x;
       padding-right: $navbar-padding-x;
       font-weight: $navbar-nav-link-font-weight;
-      color: $font-color;
+      // color: $font-color;
       // Icon
       > i {
         min-width: $navbar-icon-min-width;
@@ -32,9 +32,6 @@
         .dropdown-menu {
           margin-left: $dropdown-item-padding-x * 0.5;
         }
-      }
-      .icon {
-        padding: 10px;
       }
     }
 
@@ -122,6 +119,7 @@
             .icon {
               .ni {
                 top: 0;
+                font-size: 0.75rem;
               }
             }
 
@@ -300,8 +298,8 @@
 
   .navbar-nav .nav-link.active {
     font-weight: $font-weight-bold;
-    box-shadow: $card-box-shadow;
-    border-radius: $border-radius-md;
+    box-shadow: $box-shadow-sm;
+    border-radius: $border-radius-lg;
   }
 
   .navbar-nav > .nav-item .nav-link.active {
@@ -310,6 +308,7 @@
 
     .icon {
       @include gradient-directional(nth($primary, 1) 0%, nth($primary, -1) 100%, $deg: 310deg);
+      color: $white;  
 
       svg {
         .color-background,
@@ -347,6 +346,7 @@
       margin-left: auto;
       color: rgba($dark-gradient-state,0.5);
       @include transition($transition-base);
+      margin-right: 0.75rem;
     }
     // Expanded
     &[aria-expanded="true"] {
@@ -370,7 +370,6 @@
               background-color: transparent;
               box-shadow: none;
               color: rgba($dark-gradient-state,0.5);
-              margin-left: $navbar-vertical-collapse-margin-left;
 
               &:before {
                 content: "";
@@ -388,8 +387,6 @@
                 color: $dark-gradient-state;
 
                 &:before {
-                  height: $navbar-vertical-collapse-dot-size-active;
-                  width: $navbar-vertical-collapse-dot-size-active;
                   background: $dark-gradient-state;
                 }
               }
@@ -400,8 +397,6 @@
                 color: $dark-gradient-state;
 
                 &:before {
-                  height: $navbar-vertical-collapse-dot-size-active;
-                  width: $navbar-vertical-collapse-dot-size-active;
                   background: $dark-gradient-state;
                 }
               }
@@ -642,26 +637,4 @@
 
 // sidebar icons color
 
-.navbar-vertical {
-  .navbar-nav {
-    .nav-item {
-      .nav-link {
-        .icon i {
-          color: $dark-gradient;
-        }
-      }
-    }
-  }
-}
 
-.navbar-vertical {
-  .navbar-nav {
-    .nav-item {
-      .nav-link {
-        .icon i {
-          color: $white;
-        }
-      }
-    }
-  }
-}
